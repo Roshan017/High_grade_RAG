@@ -34,6 +34,7 @@ def Semantic_Chunker(
                 "text": sentences[0],
                 "metadata": {
                     **metadata,
+                    "user_id":"dev_user_001",
                     "doc_id": doc_id,
                     "filename": filename,
                     "chunk_index": 1,
@@ -45,9 +46,9 @@ def Semantic_Chunker(
 
         sentence_embeddings = model.encode(sentences, normalize_embeddings=True)
 
+        doc_chunks = []
         current_chunk = [sentences[0]]
         current_embeddings = [sentence_embeddings[0]]
-        chunk_idx = 1
 
         for i in range(1, len(sentences)):
             next_sentence = sentences[i]
@@ -67,35 +68,39 @@ def Semantic_Chunker(
                 current_embeddings.append(next_embedding)
 
             else:
-                all_chunks.append({
-                    "chunk_id": f"{doc_id}_semantic_chunk_{chunk_idx}",
+                doc_chunks.append({
                     "text": " ".join(current_chunk),
-                    "metadata": {
-                        **metadata,
-                        "doc_id": doc_id,
-                        "filename": filename,
-                        "chunk_index": chunk_idx,
+                    "metadata_partial": {
                         "chunking_type": "semantic",
-                        "chunks_length": len(current_chunk)
+                        "chunks_in_this_doc": len(current_chunk) # Temp: not needed but for record
                     }
                 })
-
-                chunk_idx += 1
                 current_chunk = [next_sentence]
                 current_embeddings = [next_embedding]
 
         # Add the final chunk if it exists
         if current_chunk:
-            all_chunks.append({
-                "chunk_id": f"{doc_id}_semantic_chunk_{chunk_idx}",
+            doc_chunks.append({
                 "text": " ".join(current_chunk),
+                "metadata_partial": {
+                    "chunking_type": "semantic"
+                }
+            })
+
+        total_doc_chunks = len(doc_chunks)
+        
+        for idx, chunk_data in enumerate(doc_chunks):
+            all_chunks.append({
+                "chunk_id": f"{doc_id}_semantic_chunk_{idx + 1}",
+                "text": chunk_data["text"],
                 "metadata": {
                     **metadata,
+                    "user_id": "dev_user_001",
                     "doc_id": doc_id,
                     "filename": filename,
-                    "chunk_index": chunk_idx,
+                    "chunk_index": idx + 1,
                     "chunking_type": "semantic",
-                    "chunks_length": len(current_chunk)
+                    "total_chunks": total_doc_chunks
                 }
             })
 

@@ -28,11 +28,12 @@ def Fixed_Chunker(docs_list: List[Dict[str, Any]], chunk_size: int = 1000, chunk
                     'text': chunk,
                     'metadata': {
                         **metadata,
+                        "user_id":"dev_user_001",
                         "doc_id": doc_id,
                         "filename": filename,
                         "chunk_index": idx + 1,
                         "chunking_type": 'fixed',
-                        "chunks_length": total_chunks
+                        "total_chunks": total_chunks
                     }
                 }
             )

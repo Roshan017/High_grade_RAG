@@ -37,8 +37,8 @@ class RAG_State(TypedDict, total=False):
 
     # Query
     query: str
-    processed_query: str
     query_embedding: List[float]
+    query_status: bool
 
     # Retrieval
     retrieved_chunks: List[RetrievedChunk]
