@@ -21,6 +21,7 @@ def Vector_store_node(state: RAG_State):
     
     if res['status'] =='success':
         print(f"Successfully added {res['inserted_count']} new chunks to Chroma DB")
+        print('Indexing Complete')
         return {
             "indexing_complete": True
         }

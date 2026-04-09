@@ -28,8 +28,8 @@ def Chunking_node(state: RAG_State):
     semantic_chunks = Semantic_Chunker(normalized_docs)
     # print("Chunking Node: Fixed Chunks: ",fixed_chunks)
 
-    File_writer(fixed_chunks, "Fixed_chunks", "fixed")
-    File_writer(semantic_chunks, "Semantic_chunks", "semantic")
+    File_writer(fixed_chunks,  "fixed")
+    File_writer(semantic_chunks, "semantic")
 
     
 

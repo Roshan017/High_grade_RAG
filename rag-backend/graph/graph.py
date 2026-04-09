@@ -8,22 +8,34 @@ from graph.nodes.Query_Embedder_node import Query_Embedder_node
 from graph.nodes.Retrieval_node import Retrieval_node
 from graph.nodes.Response_gen_node import Response_gen_node
 
+from services.Vector_store.Check_collection import get_collections
+
 
 def entry_route_check(state: RAG_State):
     """
     Check the starting point of the graph
     """
-    index_complete = state.get('indexing_complete', False)
+    index_complete = get_collections()
+    print("Indexing Complete: ",index_complete)
     if index_complete:
+        print('Straight to Query_Embedder_node')
         return True
     else:
+        print('Straight to Doc_Uploader_node')
         return False
 
 def query_route_check(state: RAG_State):
     """
     Check if query is present in the flow
     """
-    return bool(state.get('query') and state.get('query').strip())
+    isquery = state.get('query') and state.get('query').strip()
+    if isquery:
+        print('Query Present')
+        return True
+    else:
+        print('No Query Present')
+        return False
+         
 
 
 def build_RAG_State_Graph():

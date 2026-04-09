@@ -1,99 +1,86 @@
 Chunk 1:
-Roshan P Mathew
-Software Engineer — Full Stack & Backend Development
-roshanprakashmathew@gmail.com
-—
-+91 91884 70265
-—
-Portfolio
-—
-LinkedIn
-—
-GitHub
-Summary
-Software Engineer with 1 year of professional experience building scalable backend systems, REST APIs, and full-stack
-applications using Python (FastAPI), Node.js, SQL, and React. Skilled in secure authentication, database-driven application
-development, debugging, and deploying production-ready features in Agile environments. Strong foundation in problem-solving,
-API design, software engineering principles, and real-world application development.
-Education
-Mar Baselios College of Engineering and Technology, Thiruvananthapuram
-Bachelor of Technology in Computer Science & Engineering
-2021 – 2025
-Professional Experience
-Associate Software Developer — Techversant Infotech, Trivandrum
-Sept 2025 – Present
-• Designed and developed 20+ scalable REST APIs using FastAPI and Node.js for backend application workflows
+Artificial Intelligence has changed the way software systems are designed, deployed, and interacted with. Earlier, most applications were rule-based, meaning every possible user action had to be anticipated and manually programmed by developers. Modern AI systems, however, are probabilistic and data-driven. Instead of hardcoding every rule, developers now train models on large datasets so the system can infer patterns and make predictions. This shift has enabled applications like recommendation engines, fraud detection systems, chatbots, and autonomous assistants to become far more adaptive and useful in real-world scenarios.
 
 Chunk 2:
-Associate Software Developer — Techversant Infotech, Trivandrum
-Sept 2025 – Present
-• Designed and developed 20+ scalable REST APIs using FastAPI and Node.js for backend application workflows
-• Built backend modules for authentication, business logic, and secure transaction-oriented service flows
-• Implemented JWT-based authentication and Role-Based Access Control (RBAC) for secure user access management
-• Developed LLM-powered backend workflows using LangGraph to support structured reasoning and task execution
-• Optimized SQL queries and indexing strategies, reducing API response latency by 30%
-• Managed CI/CD workflows using GitHub Actions for automated testing and deployment
-• Collaborated in Agile sprints using Git-based workflows, pull requests, and peer code reviews
-Software Developer Intern — TGH Tech, Trivandrum
-Nov 2023 – Jun 2024
-• Developed and tested 15+ production-ready API endpoints using Node.js and Express.js
+Machine learning, which is a subset of artificial intelligence, focuses specifically on teaching systems to learn from data. In supervised learning, models are trained on labeled examples so they can predict outputs for unseen inputs. For example, a spam detection system might be trained on thousands of emails labeled as “spam” or “not spam.” In unsupervised learning, the data has no labels, and the system instead tries to find hidden structures or clusters in the dataset. Reinforcement learning, another branch, is based on reward-driven behavior, where an agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties.
 
 Chunk 3:
-Software Developer Intern — TGH Tech, Trivandrum
-Nov 2023 – Jun 2024
-• Developed and tested 15+ production-ready API endpoints using Node.js and Express.js
-• Conducted API testing, debugging, and validation using Postman to ensure high reliability
-• Assisted in relational database operations and SQL query optimization for backend systems
-• Documented API functionality and supported defect resolution during development and QA cycles
-Projects
-DataSage — Natural Language to SQL Engine
-Demo
-• Developed an LLM-powered backend system that converts natural language queries into validated SQL
-• Built agent-based reasoning pipelines using LangGraph and Gemini for structured query generation
-• Integrated PostgreSQL and vector-based retrieval workflows for contextual data access
-• Implemented safety validation to reduce malformed queries and improve query reliability
-• Deployed the application on AWS EC2 with CloudFront for scalable access and low-latency delivery
+Natural Language Processing, or NLP, is one of the most impactful branches of AI today. It allows computers to understand, interpret, generate, and respond to human language. Applications of NLP include translation systems, search engines, summarization tools, sentiment analysis, and conversational AI. Transformer-based architectures, especially after the introduction of attention mechanisms, dramatically improved the quality of NLP systems. These models can capture long-range dependencies in text better than traditional recurrent neural networks, making them highly effective for tasks involving context and semantic understanding.
 
 Chunk 4:
-• Implemented safety validation to reduce malformed queries and improve query reliability
-• Deployed the application on AWS EC2 with CloudFront for scalable access and low-latency delivery
-ForkCast — Full Stack Meal Planning Platform
-Demo
-• Built a full-stack web platform using React, FastAPI, and MongoDB for meal planning and recommendations
-• Developed backend services for recommendation workflows, analytics, and application logic
-• Integrated frontend and backend modules to ensure smooth client–server communication
-• Deployed the platform on AWS EC2 and configured CloudFront for efficient content delivery
-TribeSpace — Full Stack Social Platform
-Demo
-• Designed backend architecture supporting secure authentication, user feeds, and profile management
-• Implemented session handling and optimized backend workflows for responsive user interactions
-• Built and maintained core features for content sharing and platform engagement
-AgriVision — Intelligent Agriculture Platform
-GitHub
+Retrieval-Augmented Generation, commonly known as RAG, is a powerful architecture used to improve the reliability and factual grounding of language models. Instead of forcing the model to answer purely from internal memory, a RAG system retrieves relevant documents from a knowledge base and then uses those documents as context for generation. This approach is especially useful for domain-specific assistants, enterprise knowledge bots, and document question-answering systems. By grounding the answer in retrieved evidence, the system can reduce hallucination and improve traceability.
 
 Chunk 5:
-• Built and maintained core features for content sharing and platform engagement
-AgriVision — Intelligent Agriculture Platform
-GitHub
-• Built a data-driven application for crop recommendation, yield prediction, and disease detection
-• Developed preprocessing pipelines and validation workflows to improve model input reliability
-• Integrated machine learning modules into application workflows for intelligent agricultural support
-Technical Skills
-Languages: Java, Python, JavaScript, TypeScript, C, SQL
-Backend: FastAPI, Node.js, Express.js, REST APIs, API Integration, Authentication
-Frontend: React, Next.js, Client–Server Architecture, Frontend–Backend Integration
-Databases: PostgreSQL, MySQL, MongoDB, Query Optimization, Database Design
-Tools & Workflow: Git, GitHub Actions, Postman, CI/CD, Linux/Unix, Docker (basic)
-Cloud & Deployment: AWS (EC2, CloudFront), Cloud Deployment, CDN
-Software Engineering: Agile (Scrum), SDLC, Debugging, Secure Coding, Performance Tuning
+A standard RAG pipeline consists of multiple stages. First, raw documents are collected from sources such as PDFs, websites, Word files, internal wikis, or databases. These documents are then cleaned and preprocessed to remove noise, normalize formatting, and extract useful textual content. After preprocessing, the documents are split into smaller chunks. Chunking is extremely important because large language models have token limits and retrieval quality often depends heavily on how well the text has been segmented. If chunks are too large, retrieval becomes noisy. If chunks are too small, important context may be lost.
 
 Chunk 6:
-Cloud & Deployment: AWS (EC2, CloudFront), Cloud Deployment, CDN
-Software Engineering: Agile (Scrum), SDLC, Debugging, Secure Coding, Performance Tuning
-AI Integration: LangGraph, Generative AI, LLM Applications, AI Agents, LangFuse
-Certifications
-• AWS Cloud Technology Consultant — AWS
-• Frontend Developer — Meta
-• Data Analytics Certification — Google
-• Python Programming — Udemy
+There are multiple chunking strategies used in modern RAG systems. Fixed-size chunking is the simplest method, where text is divided based on a fixed number of characters, words, or tokens. This approach is easy to implement and efficient, but it often ignores semantic boundaries. A paragraph might get cut in the middle of an explanation, causing retrieval to return incomplete meaning. Recursive chunking improves this slightly by attempting to split using separators such as headings, paragraphs, or sentence boundaries before falling back to smaller units.
+
+Chunk 7:
+Semantic chunking is more advanced because it tries to split text based on meaning rather than just size. A common implementation involves breaking a document into sentences, generating embeddings for each sentence, and then comparing semantic similarity between adjacent sentences. If the similarity drops below a chosen threshold, the system treats that point as a boundary and starts a new chunk. This allows chunks to remain topically coherent. For example, a section discussing database indexing should ideally remain separate from a later section discussing frontend rendering performance, even if both appear within the same document.
+
+Chunk 8:
+The quality of semantic chunking depends on several parameters. One important factor is the embedding model used to represent each sentence. Another is the similarity threshold, which determines how sensitive the chunker is to topic changes. If the threshold is too low, unrelated ideas may get grouped together. If it is too high, the document may get split too aggressively into tiny fragments. Many implementations also include a maximum sentence count or token limit per chunk so that chunks remain practically usable for downstream retrieval systems.
+
+Chunk 9:
+Chunk overlap is another important design choice in document chunking. Overlap means repeating a small portion of text between adjacent chunks so that contextual continuity is preserved. Suppose one chunk ends while introducing a concept and the next chunk begins with its explanation. Without overlap, retrieval might miss the relationship between the two. With overlap, both chunks carry enough context to remain useful independently. However, too much overlap increases storage cost, indexing redundancy, and retrieval duplication.
+
+Chunk 10:
+Once chunks are created, they are usually transformed into vector embeddings and stored in a vector database. Vector databases are specialized systems optimized for similarity search. Instead of matching exact keywords, they compare semantic closeness in high-dimensional embedding space. Popular vector stores include FAISS, Pinecone, Weaviate, Chroma, and Milvus. These systems allow a query to retrieve chunks that are conceptually related, even when the wording differs significantly from the original document.
+
+Chunk 11:
+Traditional lexical retrieval methods such as TF-IDF and BM25 are still highly relevant, especially in production-grade systems. BM25 works by scoring documents based on keyword overlap, term importance, and document length normalization. It often performs extremely well when the query contains specific technical terms, product names, or exact phrases. In contrast, vector retrieval excels when the query is paraphrased or semantically similar but lexically different. Because both methods have complementary strengths, many robust systems use hybrid retrieval that combines keyword search and semantic search.
+
+Chunk 12:
+Re-ranking is often used after retrieval to improve final context selection. In a basic retrieval pipeline, the system may pull the top 10 or top 20 chunks based on initial similarity scores. However, these first-pass results are not always optimal. A re-ranker, often based on a cross-encoder model, takes the query and candidate chunks together and computes a more precise relevance score. This second-stage ranking is slower but more accurate, and it can significantly improve the quality of the final context passed into the language model.
+
+Chunk 13:
+Evaluation is one of the most overlooked parts of building a RAG system. Many developers focus heavily on ingestion, embeddings, and model integration, but never properly measure whether the system is actually retrieving the right information. A strong evaluation pipeline should test retrieval precision, recall, answer faithfulness, answer relevance, latency, and robustness across different query types. It is important to include realistic user queries rather than only idealized benchmark examples. Production systems often fail not because the model is weak, but because the retrieval pipeline silently returns irrelevant or incomplete context.
+
+Chunk 14:
+Latency is another major concern in real-world AI applications. Users expect responses within seconds, not minutes. A well-designed RAG system must balance retrieval quality with speed. Using a large embedding model may improve semantic representation, but it also increases indexing and query latency. Re-ranking improves relevance but adds another computational stage. Long prompts provide more context to the language model but increase token usage and response time. Production engineering often involves making careful trade-offs between quality, cost, and speed.
+
+Chunk 15:
+Security and access control become essential when RAG is used in enterprise settings. Internal company documents may contain confidential information such as contracts, salaries, customer records, architecture diagrams, or strategic plans. A production-ready knowledge assistant must enforce document-level permissions so users can only retrieve information they are authorized to access. It is not enough to build a technically working pipeline; the system must also respect organizational boundaries and compliance requirements.
+
+Chunk 16:
+Software engineering practices are equally important when deploying AI systems into production. It is tempting to build prototypes quickly using notebooks and ad hoc scripts, but production systems require modular architecture, logging, monitoring, testing, and observability. Components such as document ingestion, chunking, embedding generation, retrieval, re-ranking, prompt construction, and answer generation should ideally be decoupled so each stage can be improved independently. This modularity also makes debugging much easier when system quality drops.
+
+Chunk 17:
+Backend frameworks such as FastAPI are commonly used to expose AI pipelines as APIs. FastAPI is particularly popular because it supports asynchronous endpoints, request validation, automatic documentation, and good developer ergonomics. A typical AI backend might include endpoints for uploading documents, querying the knowledge base, listing indexed files, and deleting outdated content. When paired with proper background workers and storage systems, this architecture becomes scalable enough for many real-world applications.
+
+Chunk 18:
+Frontend applications are just as important as the backend intelligence. A powerful AI system with a poor user interface often fails to gain adoption. Users need clear input areas, intuitive document upload workflows, visible citations, loading states, and understandable error messages. In document-based assistants, showing which chunks or files contributed to an answer can significantly increase trust. Even simple UI decisions such as spacing, typography, and conversational layout can dramatically affect how useful the system feels to end users.
+
+Chunk 19:
+Modern web applications are often built using React because it provides a component-based architecture that is highly suitable for dynamic interfaces. Developers can create reusable components for chat windows, upload forms, citation cards, history panels, and settings pages. Styling libraries like Tailwind CSS speed up UI development by allowing utility-first design directly in markup. When combined with state management and API integration, React can power polished AI products that feel responsive and modern.
+
+Chunk 20:
+Authentication and authorization are crucial in any application that stores user data or private documents. JSON Web Tokens, or JWTs, are widely used to authenticate API requests. In a typical flow, the user logs in, receives a signed token from the backend, and includes that token in future requests. The server then verifies the token before allowing access to protected resources. Although JWT-based systems are convenient, they must be implemented carefully to avoid issues such as token leakage, insecure storage, or improper validation.
+
+Chunk 21:
+Databases form the backbone of most full-stack applications. Relational databases like PostgreSQL are ideal for structured data such as users, roles, document metadata, and audit logs. NoSQL databases may be useful when flexibility and horizontal scaling are prioritized. In AI systems, it is common to combine multiple storage layers: a relational database for application data, object storage for raw files, and a vector database for embeddings. This layered architecture helps keep the system organized and scalable.
+
+Chunk 22:
+Version control is a foundational skill for software developers. Git allows teams to track changes, collaborate safely, and manage releases across multiple environments. Branching strategies, pull requests, and code reviews help maintain quality and reduce the chance of breaking production systems. A developer building AI applications should not only understand model pipelines, but also follow solid engineering workflows such as feature branching, environment separation, and CI/CD deployment practices.
+
+Chunk 23:
+Interviews for software roles often test both theoretical understanding and practical coding ability. Candidates may be asked about object-oriented programming, database normalization, operating systems, networking, REST APIs, and problem-solving under time constraints. For backend roles, interviewers often focus on API design, authentication, SQL joins, indexing, and system design basics. For frontend roles, topics may include component lifecycle, state management, performance optimization, and responsive UI development.
+
+Chunk 24:
+Coding tests are another major part of the hiring process. These tests often include data structures and algorithms questions involving arrays, strings, linked lists, stacks, queues, trees, recursion, and dynamic programming. Even candidates targeting web development roles are frequently expected to demonstrate a reasonable level of algorithmic thinking. The best way to prepare is not to memorize solutions blindly, but to understand patterns such as sliding window, two pointers, binary search, backtracking, and graph traversal.
+
+Chunk 25:
+Fitness and nutrition require the same kind of systems thinking that software engineering does. Many people focus only on workouts, but progress depends equally on recovery, consistency, and nutrition. Protein intake is especially important for muscle repair and growth. A person trying to build muscle while staying lean should usually prioritize high-protein meals, structured training, sufficient sleep, and progressive overload in the gym. Calorie balance determines whether body weight tends to increase, decrease, or remain stable over time.
+
+Chunk 26:
+Strength training is most effective when it is tracked systematically. Compound lifts such as squats, deadlifts, bench press, overhead press, rows, and pull-ups provide a strong foundation because they train multiple muscle groups efficiently. Accessory exercises can then be used to address weak points or aesthetic goals. Training volume, intensity, and frequency should be adjusted based on recovery capacity, experience level, and individual biomechanics. A well-designed training program is not just intense — it is sustainable.
+
+Chunk 27:
+Diet planning becomes easier when meals are repeatable and macro-friendly. Many people succeed by building a few high-protein staple meals that they can prepare consistently without decision fatigue. Examples include chicken wraps, burritos, egg-based breakfasts, rice bowls, yogurt snacks, and grilled meat with vegetables. The goal is not perfection but adherence. A diet that is theoretically optimal but impossible to maintain will usually fail in practice.
+
+In the same way, productivity systems work best when they reduce friction rather than adding complexity. Many people download multiple apps, create elaborate plans, and then abandon them within a week. Sustainable productivity comes from simple habits: maintaining a task list, prioritizing high-value work, reducing distractions, and working in focused blocks. Systems that are too rigid often collapse under real-life variability, whereas lightweight routines are easier to maintain over the long term.
+
+Chunk 28:
+Ultimately, whether one is building software, preparing for interviews, improving fitness, or learning AI, the core principle is the same: consistency beats intensity when intensity is unsustainable. High-performance outcomes usually come from repeatable systems, not isolated bursts of motivation. Tools, frameworks, and advanced methods matter, but only when supported by clear thinking, deliberate iteration, and long-term execution.
 
