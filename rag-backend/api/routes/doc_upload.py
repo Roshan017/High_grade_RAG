@@ -24,6 +24,7 @@ async def doc_upload(file : UploadFile = File(...)):
     # print("Doc Upload API: ", file_bytes)
     
     result = rag_graph.invoke({
+        "user_id": "dev_user_001",
         "uploaded_files": [file.filename],
         "raw_docs": [{"filename": file.filename, "content": file_bytes, "file_type": file_ext}]
     })

@@ -12,6 +12,7 @@ def extract_results(results: Dict[str, Any]) -> List[Dict[str, Any]]:
     documents = results.get("documents", [[]])[0]
     metadatas = results.get("metadatas", [[]])[0]
     distances = results.get("distances", [[]])[0]
+    embeddings = results.get("embeddings", [[]])[0]
 
     formatted_results = []
 
@@ -20,7 +21,8 @@ def extract_results(results: Dict[str, Any]) -> List[Dict[str, Any]]:
             "id": ids[i],
             "document": documents[i] if i < len(documents) else None,
             "metadata": metadatas[i] if i < len(metadatas) else {},
-            "distance": distances[i] if i < len(distances) else None
+            "distance": distances[i] if i < len(distances) else None,
+            "embeddings": embeddings[i] if i < len(embeddings) else None
         })
 
     return formatted_results
@@ -32,13 +34,15 @@ def retrive_from_chroma(embedding: List[float]) -> Dict[str, Any] | str:
     
     results = collection.query(
         query_embeddings = [embedding],
-        n_results = 8
+        n_results = 15,
+        include=["embeddings", "metadatas", "distances", "documents"]
     )
+    # print("Retreival Results: ", results)
     if not results:
         print('No results from Chroma')
         return{
             "message": "No related content found"
         }
-    # print('Results from Chroma: ',results)
+    
     return extract_results(results)
     

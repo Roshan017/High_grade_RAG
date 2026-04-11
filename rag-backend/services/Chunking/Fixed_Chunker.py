@@ -33,6 +33,7 @@ def Fixed_Chunker(docs_list: List[Dict[str, Any]], chunk_size: int = 1000, chunk
                         "filename": filename,
                         "chunk_index": idx + 1,
                         "chunking_type": 'fixed',
+                        "chunk_id": f"{doc_id}_fixed_chunk_{idx+1}",
                         "total_chunks": total_chunks
                     }
                 }

@@ -7,6 +7,7 @@ from graph.nodes.Vector_store_node import Vector_store_node
 from graph.nodes.Query_Embedder_node import Query_Embedder_node
 from graph.nodes.Retrieval_node import Retrieval_node
 from graph.nodes.Response_gen_node import Response_gen_node
+from graph.nodes.Citation_handler import Citation_handler
 
 from services.Vector_store.Check_collection import get_collections
 
@@ -48,6 +49,7 @@ def build_RAG_State_Graph():
     graph.add_node("Query_Embedder_node", Query_Embedder_node)
     graph.add_node("Retrieval_node", Retrieval_node)
     graph.add_node("Response_gen_node", Response_gen_node)
+    graph.add_node("Citation_handler", Citation_handler)
     
 
     graph.add_conditional_edges(
@@ -73,7 +75,8 @@ def build_RAG_State_Graph():
     )
     graph.add_edge('Query_Embedder_node','Retrieval_node')
     graph.add_edge('Retrieval_node','Response_gen_node')
-    graph.add_edge('Response_gen_node',END)
+    graph.add_edge('Response_gen_node','Citation_handler')
+    graph.add_edge('Citation_handler',END)
     
 
     return graph.compile()

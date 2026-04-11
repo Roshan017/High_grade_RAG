@@ -39,6 +39,7 @@ def Semantic_Chunker(
                     "filename": filename,
                     "chunk_index": 1,
                     "chunking_type": "semantic",
+                    "chunk_id": f"{doc_id}_semantic_chunk_1",
                     "chunks_length": 1
                 }
             })
@@ -100,6 +101,7 @@ def Semantic_Chunker(
                     "filename": filename,
                     "chunk_index": idx + 1,
                     "chunking_type": "semantic",
+                    "chunk_id": f"{doc_id}_semantic_chunk_{idx + 1}",
                     "total_chunks": total_doc_chunks
                 }
             })

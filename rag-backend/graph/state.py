@@ -23,6 +23,7 @@ class RAG_State(TypedDict, total=False):
     # Ingestion
     uploaded_files: List[str]
     raw_docs: List[Dict[str, Any]]
+    user_id: str
 
     # Chunking
     chunking_strategy: str
@@ -44,6 +45,7 @@ class RAG_State(TypedDict, total=False):
     retrieved_chunks: List[RetrievedChunk]
 
     # Generation
+    ids_to_metadata: Dict[str, Any]
     final_answer: str
     citations: List[Citation]
 
