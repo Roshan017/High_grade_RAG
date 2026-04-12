@@ -45,4 +45,18 @@ def retrive_from_chroma(embedding: List[float]) -> Dict[str, Any] | str:
         }
     
     return extract_results(results)
+
+def retrive_by_id(id: str)-> Dict[str, Any] | str:
+    try:
+        result = collection.get(ids = id, include=['metadatas'])
+        if not result:
+            return{
+                "message": "No related content found"
+            }
+        return result
+    except Exception as e:
+        print(f"Error retriving by ID: {e}")
+        return{
+            "message": "Error retriving by ID"
+        }
     

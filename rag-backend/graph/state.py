@@ -14,16 +14,15 @@ class RetrievedChunk(TypedDict, total=False):
     metadata: Dict[str, Any]
     score: float
 
-class Citation(TypedDict, total=False):
-    chunk_id: str
-    source: str
-    text: str
+
 
 class RAG_State(TypedDict, total=False):
     # Ingestion
     uploaded_files: List[str]
     raw_docs: List[Dict[str, Any]]
     user_id: str
+
+    doc_upload_tries: int = 0
 
     # Chunking
     chunking_strategy: str
@@ -47,7 +46,7 @@ class RAG_State(TypedDict, total=False):
     # Generation
     ids_to_metadata: Dict[str, Any]
     final_answer: str
-    citations: List[Citation]
+    citations: str
 
     # Status flags (optional)
     chunks_embedding_complete: bool

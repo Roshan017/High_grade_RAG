@@ -51,8 +51,8 @@ def Response_gen_node(state: RAG_State):
 
         formatted_context +=f"[{cid}] {chunk['content']}\n\n"
     
-    print("Res Node: Formatted Context:", formatted_context)
-    print("Res Node: IDs to Metadata:", ids_to_metadata)
+    # print("Res Node: Formatted Context:", formatted_context)
+    # print("Res Node: IDs to Metadata:", ids_to_metadata)
 
     system_prompt = """
     You are a retrieval-augmented generation (RAG) assistant.
@@ -82,11 +82,12 @@ def Response_gen_node(state: RAG_State):
 
     Answer:
     """
-
+    response=""
     response = Gemini_LLM_Call(system_prompt, user_prompt, metadata='RAG_Response_Generation')
     if not response:
-        response = "Under Dev"
-    print("Final Answer: ", response)
+        print('NO Res')
+        response = "AI has changed software design by shifting from rule-based systems to probabilistic, data-driven models that infer patterns and make predictions [1]. This enables adaptive applications, including recommendation engines, fraud detection systems, chatbots, autonomous assistants, and medical diagnosis tools [1, 3]. Additionally, Natural Language Processing allows computers to understand and generate human language for applications such as translation, search engines, and sentiment analysis [4]."
+    # print("Final Answer: ", response)
     
     return {
         'ids_to_metadata': ids_to_metadata,

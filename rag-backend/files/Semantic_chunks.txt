@@ -1,138 +1,442 @@
 Chunk 1:
-Artificial Intelligence has changed the way software systems are designed, deployed, and interacted with. Earlier, most applications were rule-based, meaning every possible user action had to be anticipated and manually programmed by developers. Modern AI systems, however, are probabilistic and data-driven.
+Public Awareness and Vaccination Uptake of
+Human Papillomavirus (HPV):
+A Cross-Sectional Study of 100 Respondents
+Simple Summary:
+Human Papillomavirus (HPV) is a common infection associated with cervical and head
+and neck cancers. This study evaluated public awareness, vaccination knowledge,
+and vaccination uptake among 100 respondents. The findings revealed low levels of
+awareness and vaccination uptake, particularly regarding HPV’s association with head
+and neck cancer.
 
 Chunk 2:
-Instead of hardcoding every rule, developers now train models on large datasets so the system can infer patterns and make predictions. This shift has enabled applications like recommendation engines, fraud detection systems, chatbots, and autonomous assistants to become far more adaptive and useful in real-world scenarios. Machine learning, which is a subset of artificial intelligence, focuses specifically on teaching systems to learn from data.
+However, strong support for public health interventions such as NHS-
+funded vaccination and awareness campaigns was observed. These results suggest
+that the primary barrier to HPV prevention is insufficient awareness rather than public
+resistance, highlighting the need for improved education and outreach strategies. Abstract
+Human Papillomavirus (HPV) is a major etiological agent in cervical and oropha-
+ryngeal cancers. Public awareness of HPV and its vaccine remains a critical de-
+terminant of preventive health behaviour and vaccination uptake. This cross-sectional study evaluated awareness of HPV, awareness of HPV
+vaccination, vaccination uptake, and support for public health intervention among
+100 respondents.
 
 Chunk 3:
-In supervised learning, models are trained on labeled examples so they can predict outputs for unseen inputs. For example, a spam detection system might be trained on thousands of emails labeled as �spam� or �not spam.� In unsupervised learning, the data has no labels, and the system instead tries to find hidden structures or clusters in the dataset. Reinforcement learning, another branch, is based on reward-driven behavior, where an agent learns to make decisions by interacting with an environment and receiving feedback in the form of rewards or penalties.
+Descriptive statistics and structured visual analyses were per-
+formed to examine demographic patterns, awareness gradients, vaccination gaps,
+and public support for institutional action. Overall HPV awareness was low, with only 25% of respondents reporting prior
+awareness of HPV. Knowledge of HPV-associated head and neck cancer was es-
+pecially limited (5%), while vaccination uptake remained low at 8%.
 
 Chunk 4:
-Natural Language Processing, or NLP, is one of the most impactful branches of AI today. It allows computers to understand, interpret, generate, and respond to human language. Applications of NLP include translation systems, search engines, summarization tools, sentiment analysis, and conversational AI. Transformer-based architectures, especially after the introduction of attention mechanisms, dramatically improved the quality of NLP systems.
+Despite this,
+strong support for institutional intervention was observed, with 94% supporting
+NHS-funded vaccination and 88% supporting public awareness campaigns. The findings suggest that the major barrier to HPV prevention in this sample
+is not public resistance, but rather insufficient awareness and knowledge. These
+results support the need for targeted educational campaigns and improved vaccine
+access initiatives.
 
 Chunk 5:
-These models can capture long-range dependencies in text better than traditional recurrent neural networks, making them highly effective for tasks involving context and semantic understanding. Retrieval-Augmented Generation, commonly known as RAG, is a powerful architecture used to improve the reliability and factual grounding of language models. Instead of forcing the model to answer purely from internal memory, a RAG system retrieves relevant documents from a knowledge base and then uses those documents as context for generation.
+1
 
 Chunk 6:
-This approach is especially useful for domain-specific assistants, enterprise knowledge bots, and document question-answering systems. By grounding the answer in retrieved evidence, the system can reduce hallucination and improve traceability. A standard RAG pipeline consists of multiple stages.
+1. Introduction
+Human Papillomavirus (HPV) is one of the most important viral risk factors associated
+with several malignancies, particularly cervical cancer and a growing proportion of
+head and neck cancers. Although HPV vaccination offers strong preventive benefit,
+uptake remains dependent on public awareness, understanding of disease risk, and
+institutional accessibility.
 
 Chunk 7:
-First, raw documents are collected from sources such as PDFs, websites, Word files, internal wikis, or databases. These documents are then cleaned and preprocessed to remove noise, normalize formatting, and extract useful textual content. After preprocessing, the documents are split into smaller chunks.
+Awareness of HPV alone does not imply adequate knowledge of its consequences. Many individuals may have heard of HPV without understanding its oncogenic role,
+routes of transmission, or the preventive value of vaccination. This distinction between
+general awareness and meaningful knowledge is especially important in public health
+research. The present study was undertaken to evaluate public awareness of HPV, aware-
+ness of HPV vaccination, vaccination uptake, and support for institutional intervention
+among 100 respondents.
 
 Chunk 8:
-Chunking is extremely important because large language models have token limits and retrieval quality often depends heavily on how well the text has been segmented. If chunks are too large, retrieval becomes noisy. If chunks are too small, important context may be lost.
+In addition to descriptive statistics, the study also examines
+knowledge decline, vaccination gaps, and readiness for public health action. 2. Methods
+2.1 Study Design
+A cross-sectional survey design was used to assess public awareness and preventive
+attitudes related to HPV.
 
 Chunk 9:
-There are multiple chunking strategies used in modern RAG systems. Fixed-size chunking is the simplest method, where text is divided based on a fixed number of characters, words, or tokens. This approach is easy to implement and efficient, but it often ignores semantic boundaries.
+2.2 Dataset and Variables
+The final analytic sample consisted of 100 respondents. Variables analyzed from the
+dataset included:
+• Heard of HPV
+• Awareness that HPV causes cancer
+• Awareness that HPV causes head and neck cancer
+• Awareness that the HPV vaccine prevents cervical cancer
+• Awareness that the HPV vaccine prevents head and neck cancer
+• Offered vaccination
+• Vaccinated
+• Support for NHS-funded vaccination
+• Support for awareness campaigns
+2
 
 Chunk 10:
-A paragraph might get cut in the middle of an explanation, causing retrieval to return incomplete meaning. Recursive chunking improves this slightly by attempting to split using separators such as headings, paragraphs, or sentence boundaries before falling back to smaller units. Semantic chunking is more advanced because it tries to split text based on meaning rather than just size.
+2.3 Analytical Approach
+Descriptive statistics were computed for all indicators. Percentages were used to sum-
+marize awareness, vaccination uptake, and support for public health action. Age-
+stratified awareness was also examined.
 
 Chunk 11:
-A common implementation involves breaking a document into sentences, generating embeddings for each sentence, and then comparing semantic similarity between adjacent sentences. If the similarity drops below a chosen threshold, the system treats that point as a boundary and starts a new chunk. This allows chunks to remain topically coherent.
+Additional derived indicators were computed
+to strengthen interpretability, including:
+• Awareness Drop-off Index
+• Vaccination Gap
+• Cancer Knowledge Deficit
+• Public Readiness Score
+3. Results
+3.1 Demographic Characteristics
+3.1.1 Gender Distribution
+Among the 100 respondents, 55% were female and 45% were male. The mean age
+of the study population was 49.1 years. Table 1: Demographic summary of respondents. Demographic Variable
+Value
+Sample size
+100
+Mean age
+49.1 years
+Female
+55%
+Male
+45%
+Female
+Male
+45
+50
+55
+60
+55
+45
+Percentage (%)
+Figure 1: Gender distribution of respondents (N = 100).
 
 Chunk 12:
-For example, a section discussing database indexing should ideally remain separate from a later section discussing frontend rendering performance, even if both appear within the same document. The quality of semantic chunking depends on several parameters. One important factor is the embedding model used to represent each sentence.
+3
 
 Chunk 13:
-Another is the similarity threshold, which determines how sensitive the chunker is to topic changes. If the threshold is too low, unrelated ideas may get grouped together. If it is too high, the document may get split too aggressively into tiny fragments.
+3.1.2 Age Distribution
+Respondents were distributed across four age categories. The largest proportion of
+respondents was observed in the 45–60 age group. Table 2: Age distribution of respondents. Age Group
+Count
+Under 30
+18
+30–45
+29
+45–60
+31
+60+
+22
+¡30
+30–45
+45–60
+60+
+20
+25
+30
+35
+18
+29
+31
+22
+Number of Respondents
+Figure 2: Age distribution of respondents.
 
 Chunk 14:
-Many implementations also include a maximum sentence count or token limit per chunk so that chunks remain practically usable for downstream retrieval systems. Chunk overlap is another important design choice in document chunking. Overlap means repeating a small portion of text between adjacent chunks so that contextual continuity is preserved.
+3.2 Overall HPV Awareness
+Only 25% of respondents reported that they had heard of HPV prior to the survey,
+while 75% had not. This indicates low baseline familiarity with HPV within the sampled
+population. 4
 
 Chunk 15:
-Suppose one chunk ends while introducing a concept and the next chunk begins with its explanation. Without overlap, retrieval might miss the relationship between the two. With overlap, both chunks carry enough context to remain useful independently.
+Heard of HPV
+Not Heard
+20
+40
+60
+80
+100
+25
+75
+Percentage (%)
+Figure 3: Overall HPV awareness among respondents. 3.3 HPV-Related Knowledge Profile
+Awareness declined substantially as HPV-related questions became more clinically
+specific. Table 3: Knowledge and awareness indicators related to HPV and HPV-associated disease. Indicator
+Percentage
+Heard of HPV
+25%
+Aware HPV causes cancer
+23%
+Aware HPV causes head and neck cancer
+5%
+Aware vaccine prevents cervical cancer
+19%
+Aware vaccine prevents head and neck cancer
+3%
+Heard HPV
+Causes Cancer
+Head & Neck Cancer
+5
+10
+15
+20
+25
+30
+25
+23
+5
+Percentage (%)
+Figure 4: Awareness cascade showing decline from general HPV familiarity to specific
+oncological knowledge.
 
 Chunk 16:
-However, too much overlap increases storage cost, indexing redundancy, and retrieval duplication. Once chunks are created, they are usually transformed into vector embeddings and stored in a vector database. Vector databases are specialized systems optimized for similarity search.
+5
 
 Chunk 17:
-Instead of matching exact keywords, they compare semantic closeness in high-dimensional embedding space. Popular vector stores include FAISS, Pinecone, Weaviate, Chroma, and Milvus. These systems allow a query to retrieve chunks that are conceptually related, even when the wording differs significantly from the original document.
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+Heard HPV
+Causes Cancer
+Head & Neck Cancer
+Prevents Cervical Cancer
+Prevents Head & Neck Cancer
+25
+23
+5
+19
+3
+Percentage (%)
+Figure 5: Knowledge deficit profile across HPV-related awareness domains. 3.4 Vaccination Awareness and Uptake
+Only 19% of respondents were aware that the HPV vaccine can prevent cervical can-
+cer, while 3% recognised its relevance to head and neck cancer prevention. Vaccina-
+tion offer and uptake were similarly limited. Prevents Cervical Cancer
+Prevents Head & Neck Cancer
+5
+10
+15
+20
+25
+19
+3
+Percentage (%)
+Figure 6: Awareness of HPV vaccine benefits.
 
 Chunk 18:
-Traditional lexical retrieval methods such as TF-IDF and BM25 are still highly relevant, especially in production-grade systems. BM25 works by scoring documents based on keyword overlap, term importance, and document length normalization. It often performs extremely well when the query contains specific technical terms, product names, or exact phrases.
+Table 4: Vaccination-related indicators. Vaccination Indicator
+Percentage
+Aware vaccine prevents cervical cancer
+19%
+Aware vaccine prevents head and neck cancer
+3%
+Offered vaccination
+11%
+Vaccinated
+8%
+6
 
 Chunk 19:
-In contrast, vector retrieval excels when the query is paraphrased or semantically similar but lexically different. Because both methods have complementary strengths, many robust systems use hybrid retrieval that combines keyword search and semantic search. Re-ranking is often used after retrieval to improve final context selection.
+Offered
+Vaccinated
+8
+10
+12
+14
+11
+8
+Percentage (%)
+Figure 7: HPV vaccination offer and uptake. 3.5 Age-Stratified Awareness
+Age-stratified analysis revealed a clear inverse relationship between age and HPV
+awareness. Awareness was highest in respondents under 30 years of age and pro-
+gressively declined across older age groups. Table 5: HPV awareness by age group. Age Group
+Awareness (%)
+Under 30
+56%
+30–45
+31%
+45–60
+16%
+60+
+14%
+¡30
+30–45
+45–60
+60+
+10
+20
+30
+40
+50
+60
+56
+31
+16
+14
+Awareness (%)
+Figure 8: HPV awareness by age group.
 
 Chunk 20:
-In a basic retrieval pipeline, the system may pull the top 10 or top 20 chunks based on initial similarity scores. However, these first-pass results are not always optimal. A re-ranker, often based on a cross-encoder model, takes the query and candidate chunks together and computes a more precise relevance score.
+7
 
 Chunk 21:
-This second-stage ranking is slower but more accurate, and it can significantly improve the quality of the final context passed into the language model. Evaluation is one of the most overlooked parts of building a RAG system. Many developers focus heavily on ingestion, embeddings, and model integration, but never properly measure whether the system is actually retrieving the right information.
+3.6 Public Support for Government Action
+Support for public health intervention was very high. A total of 94% of respondents
+supported NHS-funded vaccination and 88% supported public awareness campaigns. Table 6: Public support for institutional HPV prevention measures. Support Indicator
+Percentage
+Support NHS-funded vaccination
+94%
+Support awareness campaigns
+88%
+NHS Funding
+Awareness Campaigns
+88
+90
+92
+94
+96
+98
+100
+94
+88
+Support (%)
+Figure 9: Public support for institutional HPV prevention strategies.
 
 Chunk 22:
-A strong evaluation pipeline should test retrieval precision, recall, answer faithfulness, answer relevance, latency, and robustness across different query types. It is important to include realistic user queries rather than only idealized benchmark examples. Production systems often fail not because the model is weak, but because the retrieval pipeline silently returns irrelevant or incomplete context.
+3.7 Derived Analytical Indicators
+To improve interpretability, several summary indicators were computed directly from
+the dataset. Table 7: Derived analytical indicators. Derived Metric
+Value
+Awareness Drop-off Index
+80%
+Vaccination Gap
+11%
+Cancer Knowledge Deficit
+77%
+Public Readiness Score
+91%
+3.7.1 Awareness Drop-off Index
+Awareness Drop-off Index = 25 −5
+25
+× 100 = 80%
+This indicates a substantial decline between general HPV awareness and aware-
+ness of HPV-associated head and neck cancer.
 
 Chunk 23:
-Latency is another major concern in real-world AI applications. Users expect responses within seconds, not minutes. A well-designed RAG system must balance retrieval quality with speed.
+8
 
 Chunk 24:
-Using a large embedding model may improve semantic representation, but it also increases indexing and query latency. Re-ranking improves relevance but adds another computational stage. Long prompts provide more context to the language model but increase token usage and response time.
+3.7.2 Vaccination Gap
+Vaccination Gap = 19% −8% = 11%
+This reflects the difference between awareness of vaccine benefit and actual vac-
+cination uptake. 3.7.3 Cancer Knowledge Deficit
+Cancer Knowledge Deficit = 100% −23% = 77%
+This indicates that a large majority of respondents lacked awareness of HPV’s
+broader cancer association. 3.7.4 Public Readiness Score
+Public Readiness Score = 94 + 88
+2
+= 91%
+This reflects a very high level of receptiveness to organized public health action. Awareness
+Drop-off
+Vaccination Gap
+Cancer Knowl-
+edge Deficit
+Public Readiness
+0
+20
+40
+60
+80
+100
+80
+11
+77
+91
+Percentage (%)
+Figure 10: Composite analytical indicators derived from the survey results.
 
 Chunk 25:
-Production engineering often involves making careful trade-offs between quality, cost, and speed. Security and access control become essential when RAG is used in enterprise settings. Internal company documents may contain confidential information such as contracts, salaries, customer records, architecture diagrams, or strategic plans.
+9
 
 Chunk 26:
-A production-ready knowledge assistant must enforce document-level permissions so users can only retrieve information they are authorized to access. It is not enough to build a technically working pipeline; the system must also respect organizational boundaries and compliance requirements. Software engineering practices are equally important when deploying AI systems into production.
+3.8 Interpretive Summary
+Table 8: Interpretive summary of key analytical findings. Analytical Area
+Interpretation
+General Awareness
+Overall awareness of HPV was low in the
+sample population. Cancer Knowledge
+Awareness of HPV’s cancer association was
+limited, especially for head and neck cancer.
 
 Chunk 27:
-It is tempting to build prototypes quickly using notebooks and ad hoc scripts, but production systems require modular architecture, logging, monitoring, testing, and observability. Components such as document ingestion, chunking, embedding generation, retrieval, re-ranking, prompt construction, and answer generation should ideally be decoupled so each stage can be improved independently. This modularity also makes debugging much easier when system quality drops.
+Vaccination Uptake
+Vaccine uptake remained substantially lower
+than awareness of benefit. Age Pattern
+Younger respondents demonstrated notably
+higher awareness than older groups. Public Health Readiness
+Support for institutional intervention was very
+high, indicating strong policy receptiveness.
 
 Chunk 28:
-Backend frameworks such as FastAPI are commonly used to expose AI pipelines as APIs. FastAPI is particularly popular because it supports asynchronous endpoints, request validation, automatic documentation, and good developer ergonomics. A typical AI backend might include endpoints for uploading documents, querying the knowledge base, listing indexed files, and deleting outdated content.
+4. Discussion
+The present study demonstrates that public awareness of HPV remains limited in this
+sample, particularly when awareness is assessed beyond simple name recognition. Only one quarter of respondents reported prior awareness of HPV, and awareness
+declined substantially as questions became more clinically specific.
 
 Chunk 29:
-When paired with proper background workers and storage systems, this architecture becomes scalable enough for many real-world applications. Frontend applications are just as important as the backend intelligence. A powerful AI system with a poor user interface often fails to gain adoption.
+A key finding of this study is the pronounced collapse in knowledge specificity. Although 25% of respondents had heard of HPV, only 5% recognised its association
+with head and neck cancer. This indicates that even among those with some baseline
+awareness, understanding of HPV’s broader clinical significance remains poor.
 
 Chunk 30:
-Users need clear input areas, intuitive document upload workflows, visible citations, loading states, and understandable error messages. In document-based assistants, showing which chunks or files contributed to an answer can significantly increase trust. Even simple UI decisions such as spacing, typography, and conversational layout can dramatically affect how useful the system feels to end users.
+Vaccination awareness and uptake were also limited. Although 19% of respondents
+were aware that the HPV vaccine can prevent cervical cancer, only 8% had been
+vaccinated. This suggests that barriers extend beyond awareness and likely include
+access, offer rates, and health communication deficits.
 
 Chunk 31:
-Modern web applications are often built using React because it provides a component-based architecture that is highly suitable for dynamic interfaces. Developers can create reusable components for chat windows, upload forms, citation cards, history panels, and settings pages. Styling libraries like Tailwind CSS speed up UI development by allowing utility-first design directly in markup.
+The age-stratified analysis demonstrated that awareness was highest among younger
+respondents and declined progressively across older age groups. This pattern may
+reflect differences in educational exposure, recency of public health messaging, or
+generational familiarity with vaccine-preventable disease campaigns. Importantly, despite low awareness and vaccination uptake, support for public health
+intervention was extremely high.
 
 Chunk 32:
-When combined with state management and API integration, React can power polished AI products that feel responsive and modern. Authentication and authorization are crucial in any application that stores user data or private documents. JSON Web Tokens, or JWTs, are widely used to authenticate API requests.
+This suggests that the major barrier in this sample
+is not ideological resistance, but rather insufficient dissemination of information and
+limited preventive outreach. 10
 
 Chunk 33:
-In a typical flow, the user logs in, receives a signed token from the backend, and includes that token in future requests. The server then verifies the token before allowing access to protected resources. Although JWT-based systems are convenient, they must be implemented carefully to avoid issues such as token leakage, insecure storage, or improper validation.
+5. Conclusion
+Among 100 respondents, awareness of HPV, awareness of HPV-associated cancers,
+and HPV vaccination uptake were all found to be suboptimal. Knowledge was espe-
+cially limited regarding HPV’s association with head and neck cancer and the broader
+protective role of vaccination.
 
 Chunk 34:
-Databases form the backbone of most full-stack applications. Relational databases like PostgreSQL are ideal for structured data such as users, roles, document metadata, and audit logs. NoSQL databases may be useful when flexibility and horizontal scaling are prioritized.
+However, the very high support for NHS-funded vaccination and public awareness
+campaigns represents a clear opportunity for policy-driven intervention. Structured ed-
+ucational campaigns, improved communication strategies, and expanded institutional
+outreach may help close the current awareness and vaccination gap. Data Transparency Statement
+All descriptive findings, tables, visualizations, and derived analytical indicators pre-
+sented in this manuscript were generated directly from the analyzed survey dataset
+used in this study.
 
 Chunk 35:
-In AI systems, it is common to combine multiple storage layers: a relational database for application data, object storage for raw files, and a vector database for embeddings. This layered architecture helps keep the system organized and scalable. Version control is a foundational skill for software developers.
-
-Chunk 36:
-Git allows teams to track changes, collaborate safely, and manage releases across multiple environments. Branching strategies, pull requests, and code reviews help maintain quality and reduce the chance of breaking production systems. A developer building AI applications should not only understand model pipelines, but also follow solid engineering workflows such as feature branching, environment separation, and CI/CD deployment practices.
-
-Chunk 37:
-Interviews for software roles often test both theoretical understanding and practical coding ability. Candidates may be asked about object-oriented programming, database normalization, operating systems, networking, REST APIs, and problem-solving under time constraints. For backend roles, interviewers often focus on API design, authentication, SQL joins, indexing, and system design basics.
-
-Chunk 38:
-For frontend roles, topics may include component lifecycle, state management, performance optimization, and responsive UI development. Coding tests are another major part of the hiring process. These tests often include data structures and algorithms questions involving arrays, strings, linked lists, stacks, queues, trees, recursion, and dynamic programming.
-
-Chunk 39:
-Even candidates targeting web development roles are frequently expected to demonstrate a reasonable level of algorithmic thinking. The best way to prepare is not to memorize solutions blindly, but to understand patterns such as sliding window, two pointers, binary search, backtracking, and graph traversal. Fitness and nutrition require the same kind of systems thinking that software engineering does.
-
-Chunk 40:
-Many people focus only on workouts, but progress depends equally on recovery, consistency, and nutrition. Protein intake is especially important for muscle repair and growth. A person trying to build muscle while staying lean should usually prioritize high-protein meals, structured training, sufficient sleep, and progressive overload in the gym.
-
-Chunk 41:
-Calorie balance determines whether body weight tends to increase, decrease, or remain stable over time. Strength training is most effective when it is tracked systematically. Compound lifts such as squats, deadlifts, bench press, overhead press, rows, and pull-ups provide a strong foundation because they train multiple muscle groups efficiently.
-
-Chunk 42:
-Accessory exercises can then be used to address weak points or aesthetic goals. Training volume, intensity, and frequency should be adjusted based on recovery capacity, experience level, and individual biomechanics. A well-designed training program is not just intense � it is sustainable.
-
-Chunk 43:
-Diet planning becomes easier when meals are repeatable and macro-friendly. Many people succeed by building a few high-protein staple meals that they can prepare consistently without decision fatigue. Examples include chicken wraps, burritos, egg-based breakfasts, rice bowls, yogurt snacks, and grilled meat with vegetables.
-
-Chunk 44:
-The goal is not perfection but adherence. A diet that is theoretically optimal but impossible to maintain will usually fail in practice. In the same way, productivity systems work best when they reduce friction rather than adding complexity.
-
-Chunk 45:
-Many people download multiple apps, create elaborate plans, and then abandon them within a week. Sustainable productivity comes from simple habits: maintaining a task list, prioritizing high-value work, reducing distractions, and working in focused blocks. Systems that are too rigid often collapse under real-life variability, whereas lightweight routines are easier to maintain over the long term.
-
-Chunk 46:
-Ultimately, whether one is building software, preparing for interviews, improving fitness, or learning AI, the core principle is the same: consistency beats intensity when intensity is unsustainable. High-performance outcomes usually come from repeatable systems, not isolated bursts of motivation. Tools, frameworks, and advanced methods matter, but only when supported by clear thinking, deliberate iteration, and long-term execution.
+No unsupported inferential statistics or externally imputed respondent-
+level variables were introduced. 11
 

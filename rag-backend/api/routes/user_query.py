@@ -26,13 +26,16 @@ def query_endpoint(user_query: User_Query):
         })
 
         ans = result.get('final_answer')
+        citations = result.get('citations')
 
         if not ans:
             ans = "No answer found"
+            citations = "No citations found"
 
         return {
             "query": result.get('query'),
-            "final_answer": ans
+            "final_answer": ans,
+            "citations": citations
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

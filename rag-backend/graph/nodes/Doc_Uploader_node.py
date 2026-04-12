@@ -23,8 +23,16 @@ def Doc_Uploader_node(state: RAG_State):
         try:
             if file_type == 'pdf':
                 pdf_doc = fitz.open(stream = content , filetype = 'pdf')
-                text = "\n".join([page.get_text() for page in pdf_doc])
+                pages = []
+                for i , page in enumerate(pdf_doc):
+                    pages.append({
+                        "text": page.get_text(),
+                        "page_no": i + 1
+                    })
                 pdf_doc.close()
+
+                text = pages
+                # print("Doc Uploader Node: ",text)
 
             elif file_type == 'docx':
                 doc = docx.Document(io.BytesIO(content))
@@ -45,7 +53,8 @@ def Doc_Uploader_node(state: RAG_State):
         
     return {
         "raw_docs": extracted_docs,
-        "uploaded_files": [doc["filename"] for doc in extracted_docs]
+        "uploaded_files": [doc["filename"] for doc in extracted_docs],
+        "doc_upload_tries": state.get('doc_upload_tries', 0) + 1
     }
     
     

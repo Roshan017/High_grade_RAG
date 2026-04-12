@@ -29,8 +29,10 @@ def Semantic_Chunker(
             continue
 
         if len(sentences) == 1:
+            page_no = metadata.get('page_number', 'unknown')
+            chunk_id = f"{doc_id}_p{page_no}_semantic_chunk_1"
             all_chunks.append({
-                "chunk_id": f"{doc_id}_semantic_chunk_1",
+                "chunk_id": chunk_id,
                 "text": sentences[0],
                 "metadata": {
                     **metadata,
@@ -39,7 +41,8 @@ def Semantic_Chunker(
                     "filename": filename,
                     "chunk_index": 1,
                     "chunking_type": "semantic",
-                    "chunk_id": f"{doc_id}_semantic_chunk_1",
+                    "chunk_id": chunk_id,
+                    "page_number": page_no,
                     "chunks_length": 1
                 }
             })
@@ -91,8 +94,10 @@ def Semantic_Chunker(
         total_doc_chunks = len(doc_chunks)
         
         for idx, chunk_data in enumerate(doc_chunks):
+            page_no = metadata.get('page_number', 'unknown')
+            chunk_id = f"{doc_id}_p{page_no}_semantic_chunk_{idx + 1}"
             all_chunks.append({
-                "chunk_id": f"{doc_id}_semantic_chunk_{idx + 1}",
+                "chunk_id": chunk_id,
                 "text": chunk_data["text"],
                 "metadata": {
                     **metadata,
@@ -101,7 +106,8 @@ def Semantic_Chunker(
                     "filename": filename,
                     "chunk_index": idx + 1,
                     "chunking_type": "semantic",
-                    "chunk_id": f"{doc_id}_semantic_chunk_{idx + 1}",
+                    "chunk_id": chunk_id,
+                    "page_number": page_no,
                     "total_chunks": total_doc_chunks
                 }
             })

@@ -22,9 +22,11 @@ def Fixed_Chunker(docs_list: List[Dict[str, Any]], chunk_size: int = 1000, chunk
         total_chunks = len(raw_chunks)
 
         for idx , chunk in enumerate(raw_chunks):
+            page_no = metadata.get("page_number", "unknown")
+            chunk_id = f"{doc_id}_p{page_no}_fixed_chunk_{idx+1}"
             chunks.append(
                 {
-                    'chunk_id': f"{doc_id}_fixed_chunk_{idx+1}",
+                    'chunk_id': chunk_id,
                     'text': chunk,
                     'metadata': {
                         **metadata,
@@ -33,7 +35,8 @@ def Fixed_Chunker(docs_list: List[Dict[str, Any]], chunk_size: int = 1000, chunk
                         "filename": filename,
                         "chunk_index": idx + 1,
                         "chunking_type": 'fixed',
-                        "chunk_id": f"{doc_id}_fixed_chunk_{idx+1}",
+                        "page_number": page_no,
+                        "chunk_id": chunk_id,
                         "total_chunks": total_chunks
                     }
                 }

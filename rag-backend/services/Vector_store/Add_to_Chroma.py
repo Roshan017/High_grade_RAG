@@ -11,9 +11,13 @@ def get_existing_ids(ids: List) -> List:
     """
     Get the Existing Ids from chroma
     """
+    if not ids:
+        return []
+    
+    unique_ids = list(set(ids))
 
     try:
-        existing_ids = collection.get(ids=ids)['ids']
+        existing_ids = collection.get(ids=unique_ids)['ids']
         return existing_ids
     except Exception as e:
         print(f"Error getting existing ids: {e}")
@@ -46,12 +50,14 @@ def add_chunks_to_chroma(chunks: List[Dict[str, Any]]) ->  Dict[str,Any]:
     filtered_embeddings = []
     filtered_metadatas = []
 
+    seen_ids = set()
     for idx , chunk_id in enumerate(ids):
-        if chunk_id not in existing_ids:
+        if chunk_id not in existing_ids and chunk_id not in seen_ids:
             filtered_ids.append(chunk_id)
             filtered_docs.append(docs[idx])
             filtered_embeddings.append(embeddings[idx])
             filtered_metadatas.append(metadata[idx])
+            seen_ids.add(chunk_id)
 
     if not filtered_ids:
         return{

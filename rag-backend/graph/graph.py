@@ -14,16 +14,20 @@ from services.Vector_store.Check_collection import get_collections
 
 def entry_route_check(state: RAG_State):
     """
-    Check the starting point of the graph
+    Check the starting point of the graph based on the input state and DB status
     """
-    index_complete = get_collections()
-    print("Indexing Complete: ",index_complete)
-    if index_complete:
-        print('Straight to Query_Embedder_node')
-        return True
-    else:
-        print('Straight to Doc_Uploader_node')
+    if state.get('raw_docs'):
+        print('New documents detected. Routing to Doc_Uploader_node.')
         return False
+    
+    index_complete = get_collections()
+    if index_complete:
+        print('Collection exists. Routing to Query_Embedder_node.')
+        return True
+    
+    print('No documents provided and no collection exists. Routing to Doc_Uploader_node.')
+    return False
+
 
 def query_route_check(state: RAG_State):
     """
