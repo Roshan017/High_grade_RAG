@@ -42,6 +42,7 @@ class RAG_State(TypedDict, total=False):
 
     # Retrieval
     retrieved_chunks: List[RetrievedChunk]
+    chunk_to_llm: List[Dict[str, Any]]
 
     # Generation
     ids_to_metadata: Dict[str, Any]

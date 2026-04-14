@@ -38,6 +38,11 @@ def Response_gen_node(state: RAG_State):
    
 
     ids_to_metadata = {}
+    chunk_to_llm = []
+    for chunk in ranked_context:
+        chunk_to_llm.append({
+            "content": chunk["content"],
+        })
     formatted_context = ""
 
 
@@ -92,5 +97,6 @@ def Response_gen_node(state: RAG_State):
     return {
         'ids_to_metadata': ids_to_metadata,
         'final_answer': response,
-        'final_answer_complete': True
+        'final_answer_complete': True,
+        'chunk_to_llm': chunk_to_llm
     }

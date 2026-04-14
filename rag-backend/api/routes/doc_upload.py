@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException , UploadFile, File
 from graph.graph import build_RAG_State_Graph
 from graph.state import RAG_State
 from models.doc_model import  Doc_Res_Model
+from dev_actions.Clear_db import clear_db
 
 router = APIRouter()
 
@@ -34,3 +35,14 @@ async def doc_upload(file : UploadFile = File(...)):
         message="Document uploaded successfully",
         data=result
     )
+
+@router.post('/cleardb')
+def clear_full_db():
+    try:
+        clear_db()
+        return {
+            "message": "Database cleared successfully"
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    

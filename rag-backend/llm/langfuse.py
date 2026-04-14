@@ -22,7 +22,7 @@ def init_langfuse():
         "https://cloud.langfuse.com"
     )
     if not pk or not sk:
-        print("⚠️ Langfuse keys missing in .env. Tracing may be limited.")
+        print("WARNING: Langfuse keys missing in .env. Tracing may be limited.")
         return None
     
     auth = base64.b64encode(f"{pk}:{sk}".encode()).decode()
@@ -36,9 +36,9 @@ def init_langfuse():
     langfuse = get_client()
 
     if langfuse.auth_check():
-        print("✅ Langfuse: Authentication successful.")
+        print("SUCCESS: Langfuse Authentication successful.")
     else:
-        print("❌ Langfuse: Authentication failed. Check your keys in .env")
+        print("ERROR: Langfuse Authentication failed. Check your keys in .env")
 
     _initialized = True
     return langfuse
