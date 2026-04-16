@@ -7,11 +7,10 @@ from langfuse import observe
 from llm.ragas.logger import log_interaction
 router = APIRouter()
 
-rag_state_graph = build_RAG_State_Graph()
-
 @router.post("/query")
 @observe(name="user-query")
 def query_endpoint(user_query: User_Query, user_id: str = Depends(get_current_user)):
+    rag_state_graph = build_RAG_State_Graph()
 
     if not user_query.query:
         raise HTTPException(status_code=400, detail="No query provided")

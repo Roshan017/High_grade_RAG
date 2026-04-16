@@ -2,15 +2,14 @@ from typing import List
 from chromadb.api import client
 import chromadb
 
-client = chromadb.PersistentClient(path="./database/chroma_db")
-collection = client.get_or_create_collection(name="rag_collection", 
-    metadata={ "description":"RAG Collection", "hnsw:space":"cosine"})
-
-
 def get_collections() -> bool:
     """
     Get the statistics and contents of the RAG collection.
     """
+    client = chromadb.PersistentClient(path="./database/chroma_db")
+    collection = client.get_or_create_collection(name="rag_collection", 
+        metadata={ "description":"RAG Collection", "hnsw:space":"cosine"})
+    
     try:
         # Get count of items
         count = collection.count()

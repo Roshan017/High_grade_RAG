@@ -6,11 +6,9 @@ from dev_actions.Clear_db import clear_db
 
 router = APIRouter()
 
-rag_graph = build_RAG_State_Graph()
-
 @router.post('/doc-upload', response_model = Doc_Res_Model)
 async def doc_upload(file : UploadFile = File(...)):
-
+    rag_graph = build_RAG_State_Graph()
     if not file:
         raise HTTPException(status_code=400, detail="No file uploaded")
 

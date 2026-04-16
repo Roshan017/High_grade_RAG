@@ -2,10 +2,9 @@ import chromadb
 from services.Model_loader import get_model
 from typing import List , Dict, Any
 
-client = chromadb.PersistentClient(path="./database/chroma_db")
-collection = client.get_or_create_collection(name="rag_collection")
-
-
+def get_collection():
+    client = chromadb.PersistentClient(path="./database/chroma_db")
+    return client.get_or_create_collection(name="rag_collection")
 
 def extract_results(results: Dict[str, Any]) -> List[Dict[str, Any]]:
     ids = results.get("ids", [[]])[0]
@@ -32,6 +31,7 @@ def retrive_from_chroma(embedding: List[float]) -> Dict[str, Any] | str:
     if not embedding:
         raise ValueError("Embedding is required")
     
+    collection = get_collection()
     results = collection.query(
         query_embeddings = [embedding],
         n_results = 15,
@@ -48,6 +48,7 @@ def retrive_from_chroma(embedding: List[float]) -> Dict[str, Any] | str:
 
 def retrive_by_id(id: str)-> Dict[str, Any] | str:
     try:
+        collection = get_collection()
         result = collection.get(ids = id, include=['metadatas'])
         if not result:
             return{

@@ -1,11 +1,11 @@
 from fastapi import APIRouter, HTTPException
-from llm.ragas.evals import run_evaluation
-from llm.ragas.dataset import load_dataset
 
 router = APIRouter()
 
 @router.post('/analyze')
 def analyze_ragas():
+    from llm.ragas.evals import run_evaluation
+    from llm.ragas.dataset import load_dataset
 
     data = load_dataset()
 
