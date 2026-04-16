@@ -115,5 +115,71 @@
       "Web development frameworks have also evolved significantly in recent years. Modern frontend frameworks like React enable developers to build dynamic and interactive user interfaces efficiently. On the backend, frameworks such as FastAPI and Node.js allow for rapid API development.",
       "Web development frameworks have also evolved significantly in recent years. Modern frontend frameworks like React enable developers to build dynamic and interactive user interfaces efficiently. On the backend, frameworks such as FastAPI and Node.js allow for rapid API development."
     ]
+  },
+  {
+    "user_input": "what is AI",
+    "response": "Artificial Intelligence refers to systems designed to learn patterns from data rather than relying on rigid rules, allowing applications to adapt to new situations without explicit reprogramming. AI is utilized in various areas, including recommendation systems, fraud detection, voice assistants, and medical diagnosis tools.",
+    "retrieved_contexts": [
+      "As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs.",
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming.",
+      "As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs.",
+      "As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs.",
+      "As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs."
+    ]
+  },
+  {
+    "user_input": "What is Artificial Intelligence",
+    "response": "Artificial Intelligence consists of systems designed to learn patterns from data rather than relying on rigid rules. This approach allows applications to adapt to new situations without the need for explicit reprogramming.",
+    "retrieved_contexts": [
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming.",
+      "As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs.",
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming.",
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming.",
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming."
+    ]
+  },
+  {
+    "user_input": "What is Artificial Intelligence",
+    "response": "Artificial Intelligence is a data-driven and probabilistic approach to building systems that learn patterns from data rather than relying on rigid, hardcoded rules. By training models on large datasets, these systems can infer patterns and make predictions, allowing them to adapt to new situations without explicit reprogramming. This shift has enabled the development of adaptive applications such as recommendation engines, fraud detection systems, chatbots, and autonomous assistants.",
+    "retrieved_contexts": [
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming.",
+      "As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs.",
+      "Artificial Intelligence has changed the way software systems are designed, deployed, and interacted with. Earlier, most applications were rule-based, meaning every possible user action had to be anticipated and manually programmed by developers. Modern AI systems, however, are probabilistic and data-driven.",
+      "Artificial Intelligence has changed the way software systems are designed, deployed, and interacted with. Earlier, most applications were rule-based, meaning every possible user action had to be anticipated and manually programmed by developers. Modern AI systems, however, are probabilistic and data-driven. Instead of hardcoding every rule, developers now train models on large datasets so the system can infer patterns and make predictions. This shift has enabled applications like recommendation engines, fraud detection systems, chatbots, and autonomous assistants to become far more adaptive and useful in real-world scenarios.",
+      "Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming."
+    ]
+  },
+  {
+    "user_input": "What is RAG",
+    "response": "Retrieval-Augmented Generation (RAG) is an architecture designed to improve the factual grounding and reliability of language models by using retrieved documents from a knowledge base as context for generation. A standard RAG pipeline involves collecting and preprocessing documents, splitting them into chunks, and retrieving relevant information to answer queries. This approach helps reduce hallucinations and improve traceability, making it particularly useful for document question-answering systems and enterprise knowledge bots.",
+    "retrieved_contexts": [
+      "Retrieval-Augmented Generation, commonly known as RAG, is a powerful architecture used to improve the reliability and factual grounding of language models. Instead of forcing the model to answer purely from internal memory, a RAG system retrieves relevant documents from a knowledge base and then uses those documents as context for generation. This approach is especially useful for domain-specific assistants, enterprise knowledge bots, and document question-answering systems. By grounding the answer in retrieved evidence, the system can reduce hallucination and improve traceability.",
+      "Production engineering often involves making careful trade-offs between quality, cost, and speed. Security and access control become essential when RAG is used in enterprise settings. Internal company documents may contain confidential information such as contracts, salaries, customer records, architecture diagrams, or strategic plans.",
+      "There are multiple chunking strategies used in modern RAG systems. Fixed-size chunking is the simplest method, where text is divided based on a fixed number of characters, words, or tokens. This approach is easy to implement and efficient, but it often ignores semantic boundaries.",
+      "This second-stage ranking is slower but more accurate, and it can significantly improve the quality of the final context passed into the language model. Evaluation is one of the most overlooked parts of building a RAG system. Many developers focus heavily on ingestion, embeddings, and model integration, but never properly measure whether the system is actually retrieving the right information.",
+      "A standard RAG pipeline consists of multiple stages. First, raw documents are collected from sources such as PDFs, websites, Word files, internal wikis, or databases. These documents are then cleaned and preprocessed to remove noise, normalize formatting, and extract useful textual content. After preprocessing, the documents are split into smaller chunks. Chunking is extremely important because large language models have token limits and retrieval quality often depends heavily on how well the text has been segmented. If chunks are too large, retrieval becomes noisy. If chunks are too small, important context may be lost."
+    ]
+  },
+  {
+    "user_input": "Who is Roshan",
+    "response": "Roshan P Mathew is a software engineer experienced in building and maintaining production-grade backend systems and cloud-deployed applications. He possesses skills in debugging APIs, resolving production issues with tools like Python and Node.js, and working with AWS deployments, CI/CD pipelines, and system observability. Additionally, he has experience working in Linux environments and implementing secure session handling.",
+    "retrieved_contexts": [
+      "Roshan P Mathew Software Engineer — Cloud, Backend & AI Systems roshanprakashmathew@gmail.com — +91 91884 70265 — Portfolio — LinkedIn — GitHub Summary",
+      "Roshan P Mathew Software Engineer — Cloud, Backend & AI Systems roshanprakashmathew@gmail.com — +91 91884 70265 — Portfolio — LinkedIn — GitHub Summary Software Engineer experienced in building and maintaining production-grade backend systems and cloud-deployed applications. Strong in debugging APIs, analyzing logs, and resolving real-world production issues using Python (FastAPI), Node.js, and SQL. Hands-on with AWS deployments, CI/CD pipelines, and system observability.",
+      "Once chunks are created, they are usually transformed into vector embeddings and stored in a vector database. Vector databases are specialized systems optimized for similarity search. Instead of matching exact keywords, they compare semantic closeness in high-dimensional embedding space. Popular vector stores include FAISS, Pinecone, Weaviate, Chroma, and Milvus. These systems allow a query to retrieve chunks that are conceptually related, even when the wording differs significantly from the original document.",
+      "• Contributed to CI/CD pipelines using GitHub Actions for automated testing and deployment • Worked in Linux environments managing deployments, monitoring services, and handling runtime issues",
+      "• Implemented secure session handling and optimized database operations for performance Technical Skills Languages: Python, Java, JavaScript, TypeScript, SQL"
+    ]
+  },
+  {
+    "user_input": "His Phone number?",
+    "response": "Roshan P Mathew's phone number is +91 91884 70265.",
+    "retrieved_contexts": [
+      "• Performed API testing, debugging, and validation using Postman • Wrote SQL queries for data retrieval, troubleshooting, and backend workflows",
+      "Using a large embedding model may improve semantic representation, but it also increases indexing and query latency. Re-ranking improves relevance but adds another computational stage. Long prompts provide more context to the language model but increase token usage and response time.",
+      "Roshan P Mathew Software Engineer — Cloud, Backend & AI Systems roshanprakashmathew@gmail.com — +91 91884 70265 — Portfolio — LinkedIn — GitHub Summary",
+      "DataSage — LLM-Powered NL-to-SQL Engine Demo • Developed an AI-powered system converting natural language into validated SQL queries",
+      "TribeSpace — Full Stack Social Platform Demo • Designed backend architecture for authentication, feeds, and user interaction workflows"
+    ]
   }
 ]

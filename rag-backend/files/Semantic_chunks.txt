@@ -1,18 +1,76 @@
 Chunk 1:
-Artificial Intelligence is rapidly transforming the way modern applications are built. Instead of relying on rigid rules, developers now design systems that learn patterns from data. This allows applications to adapt to new situations without explicit reprogramming.
+Roshan P Mathew
+Software Engineer — Cloud, Backend & AI Systems
+roshanprakashmathew@gmail.com
+—
++91 91884 70265
+—
+Portfolio
+—
+LinkedIn
+—
+GitHub
+Summary
+Software Engineer experienced in building and maintaining production-grade backend systems and cloud-deployed
+applications. Strong in debugging APIs, analyzing logs, and resolving real-world production issues using Python (FastAPI),
+Node.js, and SQL. Hands-on with AWS deployments, CI/CD pipelines, and system observability.
 
 Chunk 2:
-As a result, AI is now used in recommendation systems, fraud detection, voice assistants, and even medical diagnosis tools. Machine learning models require high-quality data to perform well. Data preprocessing plays a crucial role in removing noise, handling missing values, and normalizing inputs.
-
-Chunk 3:
-Without proper preprocessing, even the most advanced algorithms can produce poor results. Feature engineering is another important step, where relevant attributes are selected or created to improve model performance. Cloud computing has become the backbone of scalable software systems.
-
-Chunk 4:
-Platforms like AWS, Azure, and Google Cloud allow developers to deploy applications globally with minimal infrastructure management. Services such as serverless computing, managed databases, and auto-scaling make it easier to build resilient systems. This has significantly reduced the barrier to entry for startups and small teams.
-
-Chunk 5:
-Web development frameworks have also evolved significantly in recent years. Modern frontend frameworks like React enable developers to build dynamic and interactive user interfaces efficiently. On the backend, frameworks such as FastAPI and Node.js allow for rapid API development.
-
-Chunk 6:
-Together, these technologies help teams deliver full-stack applications quickly while maintaining scalability and performance.
+Built advanced AI
+systems including RAG pipelines and NL-to-SQL engines, combining solid engineering fundamentals with modern AI
+integration. Education
+Mar Baselios College of Engineering and Technology
+B.Tech in Computer Science & Engineering
+2021 – 2025
+Professional Experience
+Associate Software Developer — Techversant Infotech, Trivandrum
+Sept 2025 – Present
+• Designed and deployed 20+ REST APIs using FastAPI and Node.js for scalable backend systems
+• Built secure backend modules including authentication, RBAC, and structured validation for production workloads
+• Debugged and resolved production issues using log analysis, API tracing, and database inspection
+• Optimized SQL queries and indexing strategies, reducing API latency by 30%
+• Contributed to CI/CD pipelines using GitHub Actions for automated testing and deployment
+• Worked in Linux environments managing deployments, monitoring services, and handling runtime issues
+Backend Developer Intern — TGH Tech, Trivandrum
+Nov 2023 – Jun 2024
+• Developed and tested 15+ API endpoints using Node.js and Express.js
+• Performed API testing, debugging, and validation using Postman
+• Wrote SQL queries for data retrieval, troubleshooting, and backend workflows
+• Assisted in resolving defects and improving backend reliability during testing phases
+Projects
+TruthGuard AI — Production-Grade RAG System
+Repo
+• Built a production-grade RAG system for accurate, context-aware responses over custom data
+• Implemented hybrid retrieval (semantic + fixed chunking) using BGE embeddings and ChromaDB
+• Designed a LangGraph-based pipeline for ingestion, retrieval, and response generation
+• Reduced hallucinations using citation-grounded responses and controlled generation workflows
+• Integrated RAGAS evaluation (faithfulness, relevancy) and tracing for performance monitoring
+DataSage — LLM-Powered NL-to-SQL Engine
+Demo
+• Developed an AI-powered system converting natural language into validated SQL queries
+• Built agent-based pipelines with validation layers to prevent malformed queries and SQL injection
+• Integrated PostgreSQL with structured query execution, validation, and error handling workflows
+• Deployed on AWS EC2 with CloudFront for scalable and low-latency access
+ForkCast — Full Stack Meal Planning Platform
+Demo
+• Built a full-stack application using React, FastAPI, and MongoDB
+• Developed backend services for recommendation workflows, analytics, and user interactions
+• Deployed backend services on AWS EC2 with CDN-based delivery optimization
+TribeSpace — Full Stack Social Platform
+Demo
+• Designed backend architecture for authentication, feeds, and user interaction workflows
+• Implemented secure session handling and optimized database operations for performance
+Technical Skills
+Languages: Python, Java, JavaScript, TypeScript, SQL
+Backend: FastAPI, Node.js, Express.js, REST APIs, Microservices
+Databases: PostgreSQL, MySQL, MongoDB, Query Optimization
+Cloud & DevOps: AWS (EC2, CloudFront, IAM), CI/CD (GitHub Actions), Docker (basic)
+AI Systems: LangGraph, RAG Systems, LLM Applications, Prompt Engineering, LangFuse
+Core Skills: Debugging, API Testing, Issue Resolution, Performance Optimization, SDLC, Agile
+Certifications
+• AWS Cloud Technology Consultant — AWS
+• Generative AI: Prompt Engineering — IBM
+• Frontend Developer — Meta
+• Data Analytics Certification — Google
+• Python Programming — Udemy
 

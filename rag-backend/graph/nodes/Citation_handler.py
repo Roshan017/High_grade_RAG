@@ -24,28 +24,21 @@ def Citation_handler(state: RAG_State):
     
     # print("Citations: ",citations)
 
-    details = {
-    "pages": set(),
-    "filenames": set()
-    }
-
+    unique_citations = []
+    seen = set()
     for cit in citations:
         if not cit.get('metadatas'):
             continue
-
         for m in cit['metadatas']:
             page = m.get('page_number')
             file = m.get('filename')
-
-            if page is not None:
-                details["pages"].add(page)
-
-            if file:
-                details["filenames"].add(file)
-    details["pages"] = sorted(details["pages"])
-    details["filenames"] = list(details["filenames"])
-    citations = f"The Content was taken from pages {details['pages']} from file {details['filenames']}"
+            if file and page is not None:
+                pair = (file, page)
+                if pair not in seen:
+                    unique_citations.append({'file': file, 'page': page})
+                    seen.add(pair)
+    
     return {
         'final_answer': ans,
-        'citations': citations
+        'citations': unique_citations
     }
