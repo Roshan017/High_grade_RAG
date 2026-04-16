@@ -13,8 +13,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    print("INFO: Application starting up...")
+    print("INFO: Initializing Langfuse and Observability...")
     init_langfuse()
+    print("INFO: Startup complete. Application ready to receive traffic.")
     yield
+    print("INFO: Application shutting down...")
 
 app = FastAPI(lifespan=lifespan)
 

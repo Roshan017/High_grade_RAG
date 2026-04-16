@@ -35,10 +35,13 @@ def init_langfuse():
 
     langfuse = get_client()
 
-    if langfuse.auth_check():
-        print("SUCCESS: Langfuse Authentication successful.")
-    else:
-        print("ERROR: Langfuse Authentication failed. Check your keys in .env")
+    try:
+        if langfuse.auth_check():
+            print("SUCCESS: Langfuse Authentication successful.")
+        else:
+            print("ERROR: Langfuse Authentication failed. Check your keys in .env")
+    except Exception as e:
+        print(f"WARNING: Langfuse Auth check failed or timed out: {e}. Tracing might be affected.")
 
     _initialized = True
     return langfuse

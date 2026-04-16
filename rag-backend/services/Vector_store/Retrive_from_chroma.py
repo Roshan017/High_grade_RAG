@@ -1,7 +1,7 @@
 import chromadb
 from services.Model_loader import get_model
 from typing import List , Dict, Any
-model = get_model()
+
 client = chromadb.PersistentClient(path="./database/chroma_db")
 collection = client.get_or_create_collection(name="rag_collection")
 
